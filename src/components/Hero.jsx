@@ -26,7 +26,7 @@ export default function Hero({ onExplore, onOpenRoster, totalCreators }) {
 
           {/* Subtitle */}
           <p className="text-[#626270] text-base sm:text-lg max-w-xl leading-relaxed">
-            Eliminate messy spreadsheets and manual DM negotiations. Discover 467 verified hotel & lifestyle creators across 9 Indonesian regions, track live campaign delivery, and execute instant smart contract payouts.
+            Eliminate messy spreadsheets and manual DM negotiations. Discover verified creators across Indonesian, track live campaign delivery, and execute instant smart contract payouts.
           </p>
 
           {/* CTA Buttons */}

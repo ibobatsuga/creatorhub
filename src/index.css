@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #121217;
+    background-color: #f3f3f6;
+  }
+
+  .font-mono-tabular {
+    font-family: 'JetBrains Mono', monospace;
+    font-feature-settings: "tnum" 1;
+  }
+
+  .font-display {
+    font-family: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Custom Gradient Text */
+.text-gradient-sun {
+  background: linear-gradient(135deg, #FF2E7E 0%, #FF6036 50%, #FFA834 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(135deg, #A855F7 0%, #EC4899 50%, #F97316 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-sun {
+  background: linear-gradient(135deg, #FF2E7E 0%, #FF6036 50%, #FFA834 100%);
+}
+
+.bg-gradient-card-glow {
+  background: radial-gradient(circle at 80% 20%, rgba(255, 60, 120, 0.15) 0%, rgba(255, 120, 50, 0.08) 40%, transparent 70%);
+}
+
+/* Card Floating Shadows */
+.shadow-soft {
+  box-shadow: 0 18px 40px -12px rgba(18, 18, 25, 0.07), 0 1px 3px rgba(18, 18, 25, 0.03);
+}
+
+.shadow-card-elevated {
+  box-shadow: 0 24px 50px -15px rgba(22, 22, 35, 0.09), 0 2px 6px rgba(22, 22, 35, 0.04);
+}
+
+.shadow-badge {
+  box-shadow: 0 10px 25px -5px rgba(255, 60, 120, 0.35);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8d8de;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #bcbcc4;
+}

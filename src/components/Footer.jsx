@@ -13,7 +13,7 @@ export default function Footer({ onExplore }) {
         </h2>
         
         <p className="text-sm text-[#626270]">
-          Connect your Google Sheet or launch campaigns with our 467 pre-verified Indonesian creator pool.
+          Connect campaigns with our 467 verified Indonesian creator pool.
         </p>
 
         {/* Email Pill Input matching reference */}

@@ -3,30 +3,30 @@ import { MapPin, Building2, Users } from 'lucide-react';
 
 export default function PropertiesStrip({ regionStats }) {
   return (
-    <section className="py-8 px-4 md:px-8 max-w-7xl mx-auto w-full">
+    <section className="py-2 px-4 md:px-8 max-w-7xl mx-auto w-full">
       {/* Timeline rule with hexagonal nodes matching Reference Image */}
-      <div className="relative flex items-center justify-center my-6">
+      <div className="relative flex items-center justify-center my-3">
         <div className="absolute inset-0 flex items-center">
           <div className="w-full border-t border-black/[0.08]"></div>
         </div>
-        <div className="relative flex items-center gap-12 bg-[#f4f4f6] px-6 text-[11px] font-mono-tabular text-[#828290] uppercase tracking-wider">
+        <div className="relative flex items-center gap-8 md:gap-12 bg-[#f4f4f6] px-4 text-[10px] md:text-[11px] font-mono-tabular text-[#828290] uppercase tracking-wider">
           <span className="flex items-center gap-1.5">
-            <span className="w-2 h-2 rotate-45 border border-black/30 bg-white"></span>
+            <span className="w-1.5 h-1.5 rotate-45 border border-black/30 bg-white"></span>
             9 Operating Regional Clusters
           </span>
           <span className="hidden md:flex items-center gap-1.5">
-            <span className="w-2 h-2 rotate-45 border border-black/30 bg-white"></span>
+            <span className="w-1.5 h-1.5 rotate-45 border border-black/30 bg-white"></span>
             Integrated Hotel Units & Properties
           </span>
           <span className="flex items-center gap-1.5">
-            <span className="w-2 h-2 rotate-45 border border-black/30 bg-white"></span>
+            <span className="w-1.5 h-1.5 rotate-45 border border-black/30 bg-white"></span>
             467 Verified Listings
           </span>
         </div>
       </div>
 
       {/* Region Carousel Badges */}
-      <div className="flex items-center justify-between gap-3 overflow-x-auto py-2 no-scrollbar">
+      <div className="flex items-center justify-between gap-2.5 overflow-x-auto py-1 no-scrollbar">
         {regionStats.map((item) => (
           <div
             key={item.region}

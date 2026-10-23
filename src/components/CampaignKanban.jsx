@@ -15,19 +15,19 @@ export default function CampaignKanban({ roster, onMoveStage, onRemoveFromRoster
   const liveCount = roster.filter(r => r.stage === 'Live').length;
 
   return (
-    <section id="campaigns" className="py-12 px-4 md:px-8 max-w-7xl mx-auto w-full">
+    <section id="campaigns" className="py-6 md:py-8 px-4 md:px-8 max-w-7xl mx-auto w-full">
       
       {/* Campaign Header */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-5">
         <div>
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-black/[0.06] text-xs font-mono-tabular text-[#555562] mb-2 shadow-soft">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-black/[0.06] text-xs font-mono-tabular text-[#555562] mb-1.5 shadow-soft">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
             Active Campaign Pipeline
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-[#111116] tracking-tight">
+          <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-[#111116] tracking-tight">
             Year-End Hospitality Blitz 2026
           </h2>
-          <p className="text-sm text-[#787884] mt-1">
+          <p className="text-xs sm:text-sm text-[#787884] mt-0.5">
             Tracking creator deliverables, content approval, and milestone payouts across hotel units.
           </p>
         </div>

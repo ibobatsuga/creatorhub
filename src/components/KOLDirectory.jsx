@@ -60,19 +60,19 @@ export default function KOLDirectory({ creators, onAddToRoster, onDraftContract,
   };
 
   return (
-    <section id="directory" className="py-12 px-4 md:px-8 max-w-7xl mx-auto w-full">
+    <section id="directory" className="py-6 md:py-8 px-4 md:px-8 max-w-7xl mx-auto w-full">
       
       {/* Header with Title and Search */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-5">
         <div>
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-black/[0.06] text-xs font-mono-tabular text-[#555562] mb-2 shadow-soft">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-black/[0.06] text-xs font-mono-tabular text-[#555562] mb-1.5 shadow-soft">
             <span className="w-1.5 h-1.5 rounded-full bg-[#FF2E7E]"></span>
             Master Database Explorer
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-[#111116] tracking-tight">
+          <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-[#111116] tracking-tight">
             KOL & Media Directory <span className="text-gradient-sun">({filtered.length})</span>
           </h2>
-          <p className="text-sm text-[#787884] mt-1">
+          <p className="text-xs sm:text-sm text-[#787884] mt-0.5">
             Consolidated registry across operating hotel units, properties, and regional agencies.
           </p>
         </div>
@@ -85,7 +85,7 @@ export default function KOLDirectory({ creators, onAddToRoster, onDraftContract,
             value={search}
             onChange={(e) => { setSearch(e.target.value); setPage(1); }}
             placeholder="Search handle, name, city, category..."
-            className="w-full pl-10 pr-4 py-2.5 rounded-full bg-white border border-black/[0.08] shadow-soft text-xs text-[#121217] placeholder:text-[#9898a4] focus:outline-none focus:ring-2 focus:ring-[#FF2E7E]/30 focus:border-[#FF2E7E] transition-all"
+            className="w-full pl-10 pr-4 py-2 rounded-full bg-white border border-black/[0.08] shadow-soft text-xs text-[#121217] placeholder:text-[#9898a4] focus:outline-none focus:ring-2 focus:ring-[#FF2E7E]/30 focus:border-[#FF2E7E] transition-all"
           />
           {search && (
             <button
@@ -99,7 +99,7 @@ export default function KOLDirectory({ creators, onAddToRoster, onDraftContract,
       </div>
 
       {/* Filter Controls Row */}
-      <div className="bg-white rounded-3xl p-4 md:p-5 border border-black/[0.05] shadow-soft mb-8 space-y-4">
+      <div className="bg-white rounded-3xl p-3.5 md:p-4 border border-black/[0.05] shadow-soft mb-6 space-y-3">
         
         {/* Tier Pills */}
         <div className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">

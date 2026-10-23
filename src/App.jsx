@@ -154,7 +154,7 @@ export default function App() {
             />
 
             {/* Quick Preview of Directory */}
-            <div className="mt-8">
+            <div className="mt-2">
               <KOLDirectory
                 creators={creators}
                 onAddToRoster={handleAddToRoster}
@@ -166,7 +166,7 @@ export default function App() {
         )}
 
         {activeTab === 'directory' && (
-          <div className="pt-6">
+          <div className="pt-2">
             <KOLDirectory
               creators={creators}
               onAddToRoster={handleAddToRoster}
@@ -177,7 +177,7 @@ export default function App() {
         )}
 
         {activeTab === 'campaigns' && (
-          <div className="pt-6">
+          <div className="pt-2">
             <CampaignKanban
               roster={roster}
               onMoveStage={handleMoveStage}
@@ -188,18 +188,18 @@ export default function App() {
         )}
 
         {activeTab === 'contracts' && (
-          <div className="pt-8 px-4 md:px-8 max-w-7xl mx-auto w-full">
-            <div className="bg-white rounded-3xl p-8 border border-black/[0.05] shadow-soft mb-8">
-              <h2 className="font-display text-3xl font-extrabold text-[#111116]">Smart Legal Agreements</h2>
-              <p className="text-sm text-[#787884] mt-1">
+          <div className="pt-3 px-4 md:px-8 max-w-7xl mx-auto w-full">
+            <div className="bg-white rounded-3xl p-5 md:p-6 border border-black/[0.05] shadow-soft mb-5">
+              <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-[#111116]">Smart Legal Agreements</h2>
+              <p className="text-xs sm:text-sm text-[#787884] mt-0.5">
                 Select any verified KOL or media entity from your database of 467 accounts to generate a customized legal agreement.
               </p>
-              <div className="mt-6 flex flex-wrap gap-3">
+              <div className="mt-4 flex flex-wrap gap-2.5">
                 {roster.map(creator => (
                   <button
                     key={creator.id}
                     onClick={() => handleDraftContract(creator)}
-                    className="px-4 py-2 rounded-2xl bg-[#f8f8fa] hover:bg-black/[0.05] border border-black/[0.06] text-xs font-semibold text-[#121217] flex items-center gap-2 transition-colors cursor-pointer"
+                    className="px-3.5 py-1.5 rounded-2xl bg-[#f8f8fa] hover:bg-black/[0.05] border border-black/[0.06] text-xs font-semibold text-[#121217] flex items-center gap-2 transition-colors cursor-pointer"
                   >
                     <span className="w-2 h-2 rounded-full bg-[#FF2E7E]"></span>
                     Draft agreement for {creator.name} ({creator.handle})

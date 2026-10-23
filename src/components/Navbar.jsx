@@ -10,7 +10,7 @@ export default function Navbar({ activeTab, setActiveTab, sheetCount, onOpenSync
   ];
 
   return (
-    <header className="sticky top-4 z-40 px-4 md:px-8 max-w-7xl mx-auto w-full">
+    <header className="sticky top-2.5 z-40 px-4 md:px-8 max-w-7xl mx-auto w-full">
       <div className="flex items-center justify-between">
         {/* Brand Logo */}
         <div 

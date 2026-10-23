@@ -4,14 +4,14 @@ import { InstagramIcon } from './Icons';
 
 export default function Hero({ onExplore, onOpenRoster, totalCreators }) {
   return (
-    <section className="pt-12 pb-16 md:py-20 px-4 md:px-8 max-w-7xl mx-auto w-full">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+    <section className="pt-6 pb-6 md:pt-10 md:pb-8 px-4 md:px-8 max-w-7xl mx-auto w-full">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
         
         {/* Left Column: Headline and Actions */}
-        <div className="lg:col-span-7 flex flex-col items-start space-y-6">
+        <div className="lg:col-span-7 flex flex-col items-start space-y-4">
           
           {/* Subtle Pill Tag */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-black/[0.06] shadow-soft">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-black/[0.06] shadow-soft">
             <span className="w-2 h-2 rounded-full bg-[#FF2E7E] animate-pulse"></span>
             <span className="text-[11px] font-medium text-[#50505c]">
               Google Sheet Connected · <strong className="text-[#121217]">{totalCreators} Real KOLs & Media</strong>
@@ -19,21 +19,21 @@ export default function Hero({ onExplore, onOpenRoster, totalCreators }) {
           </div>
 
           {/* Main Title matching Reference Image */}
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#111116] leading-[1.08]">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#111116] leading-[1.08]">
             It's ready and <br />
             set <span className="text-gradient-sun">Just create.</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-[#626270] text-base sm:text-lg max-w-xl leading-relaxed">
+          <p className="text-[#626270] text-sm sm:text-base max-w-xl leading-relaxed">
             Eliminate messy spreadsheets and manual DM negotiations. Discover verified creators across Indonesian, track live campaign delivery, and execute instant smart contract payouts.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-wrap items-center gap-4 pt-2">
+          <div className="flex flex-wrap items-center gap-3 pt-1">
             <button
               onClick={onExplore}
-              className="px-6 py-3 rounded-full bg-[#121217] text-white font-medium text-sm hover:bg-black transition-all shadow-md flex items-center gap-2 cursor-pointer group"
+              className="px-5 py-2.5 rounded-full bg-[#121217] text-white font-medium text-xs sm:text-sm hover:bg-black transition-all shadow-md flex items-center gap-2 cursor-pointer group"
             >
               <span>Explore 467 Creators</span>
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -41,25 +41,25 @@ export default function Hero({ onExplore, onOpenRoster, totalCreators }) {
 
             <button
               onClick={onOpenRoster}
-              className="px-5 py-3 rounded-full bg-white text-[#121217] font-medium text-sm border border-black/[0.08] hover:bg-black/[0.03] transition-all cursor-pointer shadow-soft"
+              className="px-4 py-2.5 rounded-full bg-white text-[#121217] font-medium text-xs sm:text-sm border border-black/[0.08] hover:bg-black/[0.03] transition-all cursor-pointer shadow-soft"
             >
               Open Campaign Roster
             </button>
           </div>
 
           {/* Platform Pills & Trust Badges */}
-          <div className="pt-6 flex flex-wrap items-center gap-4">
-            <span className="text-xs font-mono-tabular text-[#828290] uppercase tracking-wider font-semibold">
+          <div className="pt-3 flex flex-wrap items-center gap-3">
+            <span className="text-[11px] font-mono-tabular text-[#828290] uppercase tracking-wider font-semibold">
               Supported Channels
             </span>
             <div className="flex items-center gap-2">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-black/[0.05] text-xs font-medium text-[#40404c] shadow-soft">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-black/[0.05] text-[11px] font-medium text-[#40404c] shadow-soft">
                 <InstagramIcon className="w-3.5 h-3.5 text-[#E1306C]" /> Instagram (405)
               </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-black/[0.05] text-xs font-medium text-[#40404c] shadow-soft">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-black/[0.05] text-[11px] font-medium text-[#40404c] shadow-soft">
                 <Tv className="w-3.5 h-3.5 text-[#3B82F6]" /> Broadcast TV (28)
               </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-black/[0.05] text-xs font-medium text-[#40404c] shadow-soft">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-black/[0.05] text-[11px] font-medium text-[#40404c] shadow-soft">
                 <Newspaper className="w-3.5 h-3.5 text-[#10B981]" /> Online Media (34)
               </span>
             </div>

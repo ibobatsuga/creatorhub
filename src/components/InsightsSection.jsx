@@ -4,8 +4,8 @@ import { formatRupiah } from '../utils/helpers';
 
 export default function InsightsSection({ totalCreators, totalFollowers, totalBudget, totalSpend }) {
   return (
-    <section className="py-6 md:py-8 px-4 md:px-8 max-w-7xl mx-auto w-full">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+    <section className="py-10 md:py-14 px-4 md:px-8 max-w-7xl mx-auto w-full">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         
         {/* Left Side: Dual Stacked Stat Cards with Glowing Node (matching Image 4) */}
         <div className="lg:col-span-6 relative flex flex-col sm:flex-row items-center gap-5 justify-center">

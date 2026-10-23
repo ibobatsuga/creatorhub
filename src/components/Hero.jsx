@@ -4,11 +4,11 @@ import { InstagramIcon } from './Icons';
 
 export default function Hero({ onExplore, onOpenRoster, totalCreators }) {
   return (
-    <section className="pt-6 pb-6 md:pt-10 md:pb-8 px-4 md:px-8 max-w-7xl mx-auto w-full">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
+    <section className="pt-8 pb-10 md:pt-14 md:pb-14 px-4 md:px-8 max-w-7xl mx-auto w-full">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
         
         {/* Left Column: Headline and Actions */}
-        <div className="lg:col-span-7 flex flex-col items-start space-y-4">
+        <div className="lg:col-span-7 flex flex-col items-start space-y-5">
           
           {/* Subtle Pill Tag */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-black/[0.06] shadow-soft">

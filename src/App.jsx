@@ -154,7 +154,7 @@ export default function App() {
             />
 
             {/* Quick Preview of Directory */}
-            <div className="mt-2">
+            <div className="mt-6 md:mt-8">
               <KOLDirectory
                 creators={creators}
                 onAddToRoster={handleAddToRoster}
@@ -166,7 +166,7 @@ export default function App() {
         )}
 
         {activeTab === 'directory' && (
-          <div className="pt-2">
+          <div className="pt-6 md:pt-8">
             <KOLDirectory
               creators={creators}
               onAddToRoster={handleAddToRoster}
@@ -177,7 +177,7 @@ export default function App() {
         )}
 
         {activeTab === 'campaigns' && (
-          <div className="pt-2">
+          <div className="pt-6 md:pt-8">
             <CampaignKanban
               roster={roster}
               onMoveStage={handleMoveStage}
@@ -188,7 +188,7 @@ export default function App() {
         )}
 
         {activeTab === 'contracts' && (
-          <div className="pt-3 px-4 md:px-8 max-w-7xl mx-auto w-full">
+          <div className="pt-6 md:pt-8 px-4 md:px-8 max-w-7xl mx-auto w-full">
             <div className="bg-white rounded-3xl p-5 md:p-6 border border-black/[0.05] shadow-soft mb-5">
               <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-[#111116]">Smart Legal Agreements</h2>
               <p className="text-xs sm:text-sm text-[#787884] mt-0.5">

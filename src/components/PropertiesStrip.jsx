@@ -3,13 +3,13 @@ import { MapPin, Building2, Users } from 'lucide-react';
 
 export default function PropertiesStrip({ regionStats }) {
   return (
-    <section className="py-2 px-4 md:px-8 max-w-7xl mx-auto w-full">
+    <section className="py-4 md:py-6 px-4 md:px-8 max-w-7xl mx-auto w-full">
       {/* Timeline rule with hexagonal nodes matching Reference Image */}
-      <div className="relative flex items-center justify-center my-3">
+      <div className="relative flex items-center justify-center my-4">
         <div className="absolute inset-0 flex items-center">
           <div className="w-full border-t border-black/[0.08]"></div>
         </div>
-        <div className="relative flex items-center gap-8 md:gap-12 bg-[#f4f4f6] px-4 text-[10px] md:text-[11px] font-mono-tabular text-[#828290] uppercase tracking-wider">
+        <div className="relative flex items-center gap-6 sm:gap-10 bg-[#f4f4f6] px-4 text-[10px] md:text-[11px] font-mono-tabular text-[#828290] uppercase tracking-wider">
           <span className="flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rotate-45 border border-black/30 bg-white"></span>
             9 Operating Regional Clusters
@@ -25,8 +25,8 @@ export default function PropertiesStrip({ regionStats }) {
         </div>
       </div>
 
-      {/* Region Carousel Badges */}
-      <div className="flex items-center justify-between gap-2.5 overflow-x-auto py-1 no-scrollbar">
+      {/* Region Carousel Badges - Clean horizontal scroll with completely hidden scrollbar */}
+      <div className="flex items-center gap-3 overflow-x-auto py-2 no-scrollbar scroll-smooth">
         {regionStats.map((item) => (
           <div
             key={item.region}

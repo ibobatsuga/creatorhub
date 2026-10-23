@@ -3,10 +3,10 @@ import { ArrowRight, Heart } from 'lucide-react';
 
 export default function Footer({ onExplore }) {
   return (
-    <footer className="pt-10 pb-8 px-4 md:px-8 max-w-7xl mx-auto w-full border-t border-black/[0.06] mt-8">
+    <footer className="pt-8 pb-8 px-4 md:px-8 max-w-7xl mx-auto w-full border-t border-black/[0.06] mt-2">
       
       {/* Big CTA Section matching Image 1 bottom */}
-      <div className="text-center max-w-2xl mx-auto space-y-3 mb-10">
+      <div className="text-center max-w-2xl mx-auto space-y-3 mb-8">
         <h2 className="font-display text-3xl sm:text-4xl font-extrabold tracking-tight text-[#111116]">
           Build Your <br />
           <span className="text-gradient-sun">Creator Future</span>

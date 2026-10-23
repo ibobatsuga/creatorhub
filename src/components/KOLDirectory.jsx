@@ -60,7 +60,7 @@ export default function KOLDirectory({ creators, onAddToRoster, onDraftContract,
   };
 
   return (
-    <section id="directory" className="py-6 md:py-8 px-4 md:px-8 max-w-7xl mx-auto w-full">
+    <section id="directory" className="pt-6 pb-2 md:pt-8 md:pb-2 px-4 md:px-8 max-w-7xl mx-auto w-full">
       
       {/* Header with Title and Search */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-5">
@@ -296,7 +296,7 @@ export default function KOLDirectory({ creators, onAddToRoster, onDraftContract,
 
       {/* Pagination Controls */}
       {totalPages > 1 && (
-        <div className="flex items-center justify-between mt-8 pt-4 border-t border-black/[0.06]">
+        <div className="flex items-center justify-between mt-5 pt-3 pb-1 border-t border-black/[0.06]">
           <span className="text-xs font-mono-tabular text-[#888894]">
             Page {page} of {totalPages} ({filtered.length} total)
           </span>

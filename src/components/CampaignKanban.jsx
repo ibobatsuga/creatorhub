@@ -15,7 +15,7 @@ export default function CampaignKanban({ roster, onMoveStage, onRemoveFromRoster
   const liveCount = roster.filter(r => r.stage === 'Live').length;
 
   return (
-    <section id="campaigns" className="py-6 md:py-8 px-4 md:px-8 max-w-7xl mx-auto w-full">
+    <section id="campaigns" className="pt-6 pb-2 md:pt-8 md:pb-2 px-4 md:px-8 max-w-7xl mx-auto w-full">
       
       {/* Campaign Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-5">

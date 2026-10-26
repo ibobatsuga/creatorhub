@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import { X, RefreshCw, CheckCircle2, ExternalLink, Database, Table, ShieldCheck, Sparkles } from 'lucide-react';
+import { X, RefreshCw, CheckCircle2, Database, ShieldCheck, Sparkles } from 'lucide-react';
 
 export default function GoogleSheetSyncModal({ isOpen, onClose, onRefresh, isSyncing, totalRows, lastSyncTime }) {
   if (!isOpen) return null;
-
-  const sheetUrl = "https://docs.google.com/spreadsheets/d/1_7Ii5hVHqS-B2R6YMISCY9CQ8WKOtx3yQJ6mD1kubUk/edit?gid=0#gid=0";
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm animate-in fade-in duration-200">
@@ -46,13 +44,16 @@ export default function GoogleSheetSyncModal({ isOpen, onClose, onRefresh, isSyn
           {/* Details Box */}
           <div className="p-4 rounded-2xl bg-[#f8f8fa] border border-black/[0.04] space-y-3 text-xs font-mono-tabular">
             <div>
-              <span className="text-[#888894] block text-[10px] uppercase">Spreadsheet ID:</span>
-              <span className="text-[#121217] font-semibold break-all">1_7Ii5hVHqS-B2R6YMISCY9CQ8WKOtx3yQJ6mD1kubUk</span>
+              <span className="text-[#888894] block text-[10px] uppercase">Connection Status:</span>
+              <span className="text-emerald-700 font-semibold flex items-center gap-1.5 mt-0.5">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                Active Live Sync Pipeline
+              </span>
             </div>
 
             <div className="grid grid-cols-2 gap-3 pt-2 border-t border-black/[0.04]">
               <div>
-                <span className="text-[#888894] block text-[10px] uppercase">Sheet Name:</span>
+                <span className="text-[#888894] block text-[10px] uppercase">Data Cluster:</span>
                 <span className="font-semibold text-[#121217]">MASTER KOL & MEDIA</span>
               </div>
               <div>
@@ -68,20 +69,6 @@ export default function GoogleSheetSyncModal({ isOpen, onClose, onRefresh, isSyn
               </span>
             </div>
           </div>
-
-          {/* External Link */}
-          <a
-            href={sheetUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-between p-3 rounded-2xl bg-white border border-black/[0.08] hover:border-black/[0.2] transition-colors text-xs text-[#121217] group"
-          >
-            <div className="flex items-center gap-2">
-              <Table className="w-4 h-4 text-emerald-600" />
-              <span className="font-semibold">Open Spreadsheet in Google Docs</span>
-            </div>
-            <ExternalLink className="w-4 h-4 text-[#888894] group-hover:text-[#121217] transition-colors" />
-          </a>
 
         </div>
 
